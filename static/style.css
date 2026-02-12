@@ -1,0 +1,210 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   overflow: hidden;
+   font-family: "Noto Sans TC", "sans-serif"; 
+   color: white;
+   text-align: center;
+   align-items: center;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #000;
+}
+#main-menu {
+    z-index: 1;
+}
+.game-box {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer; 
+    transition: transform 0.3s ease, background 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.box-img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* 用於隱藏 */
+.hidden {
+    display: none;
+}
+
+/* 模式選擇區塊 */
+#mode-menu {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+.mode-box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 0.3s ease;
+}
+.mode-box.show {
+    opacity: 1;
+    transform: scale(1);
+}
+.mode-box img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+.mode-box p {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.mode-box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+}
+a {
+    text-decoration: none; /*去掉文字底線*/
+    color: inherit; /*保持文字原來顏色*/
+}
+
+/* ---關卡選單樣式--- */
+.level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     gap: 50px;
+    animation: fadeIn 0.5s ease;
+    width: 100%;
+}
+
+/* 桌面版佈局：150px 寬，每列 6 個 */
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 150px); 
+    gap: 20px;
+    justify-content: center;
+    width: auto;
+}
+.level-btn {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 36px; /* 大方塊配大字 */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+.level-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    transform: scale(1.05);
+    border-color: white;
+}
+h2 { 
+    font-size: 40px 
+}
+
+
+/* --- 響應式條件：768px 以下 (手機/平板) --- */
+.back-btn-alt {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.back-btn-alt:hover {
+    background: white;
+    color: black;
+}
+
+.hidden { display: none !important; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    #mode-menu {
+        gap: 50px;
+    }
+    .mode-box {
+        width: 180px;
+        height: 180px;
+    }
+    .mode-box img {
+        width: 120px;
+        height: 120px;
+    }
+    .level-grid {
+        /* 改為：每列 4 個，方塊改為 70px */
+        grid-template-columns: repeat(4, 90px); 
+        gap: 12px;
+    }
+    .level-btn {
+        width: 90px;
+        height: 90px;
+        font-size: 24px; /* 小方塊配小字 */
+        border-width: 2px;
+        border-radius: 12px;
+        padding-top: 30px;
+    }
+}

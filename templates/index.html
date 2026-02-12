@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文單字解謎大挑戰</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="/static/bgv-start.mp4" type="video/mp4">
+    </video>
+
+    <div id="main-menu" class="center-content">
+        <h1>單字解謎大挑戰</h1>
+        <div id="start-box" class="game-box" onclick="startGame()">
+            <img src="/static/image/start_game.png" alt="start" class="box-img">
+            <p>開始遊戲</p>
+        </div>
+    </div>
+
+    <div id="mode-menu" class="center-content hidden">
+        <div class="mode-box fade-in" onclick="showLevelSelect('easy')">
+            <img src="/static/image/easy_mode.png" alt="easy mode">
+            <p>簡單模式</p>
+        </div>
+        <a href="/hard" style="text-decoration: none;">
+            <div class="mode-box fade-in">
+                <img src="/static/image/hard_mode.png" alt="hard mode">
+                <p>困難模式</p>
+            </div>
+        </a>
+    </div>
+
+    <div id="level-menu" class="center-content hidden">
+        <div class="level-container">
+            <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 10px;">選擇關卡</h2>
+            
+            <div class="level-grid" id="level-grid-items">
+                </div>
+
+            <button onclick="backToMode()" class="back-btn-alt">返回模式選擇</button>
+        </div>
+    </div>
+
+    <audio src="/static/bgm-start.mp3" id="bgm" loop></audio>
+
+    <script>
+        function startGame() {
+            document.getElementById('bgm').play();
+            document.getElementById('main-menu').classList.add('hidden');
+            document.getElementById('mode-menu').classList.remove('hidden');
+            document.querySelectorAll('.mode-box').forEach((box, index) => {
+                setTimeout(() => { box.classList.add('show'); }, index * 300);
+            });
+        }
+
+        function showLevelSelect(mode) {
+            if (mode === 'easy') {
+                document.getElementById('mode-menu').classList.add('hidden');
+                document.getElementById('level-menu').classList.remove('hidden');
+
+                const grid = document.getElementById('level-grid-items');
+                grid.innerHTML = ''; 
+
+                for (let i = 1; i <= 12; i++) {
+                    const btn = document.createElement('a');
+                    btn.href = `/easy?level=${i}`;
+                    btn.className = 'level-btn';
+                    btn.innerText = i;
+                    grid.appendChild(btn);
+                }
+            }
+        }
+
+        function backToMode() {
+            document.getElementById('level-menu').classList.add('hidden');
+            document.getElementById('mode-menu').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

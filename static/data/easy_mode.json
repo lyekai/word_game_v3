@@ -1,0 +1,111 @@
+[
+    {
+        "level": 1,
+        "image_vague": "/static/image_vague/A1duck_rose_snow.jpg",
+        "image_origin": "/static/image_origin/A1duck_rose_snow.jpg",
+        "tip": ["動物", "物件", "場景"],
+        "answer": ["duck", "rose", "snow"],
+        "show": ["duck 鴨子", "rose 玫瑰", "snow 白雪"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 2,
+        "image_vague": "/static/image_vague/A2puppy_parrot_forest.jpg",
+        "image_origin": "/static/image_origin/A2puppy_parrot_forest.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["puppy", "parrot", "forest"],
+        "show": ["puppy 小狗", "parrot 鸚鵡", "forest 森林"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 3,
+        "image_vague": "/static/image_vague/A3koala_leaves_ice.jpg",
+        "image_origin": "/static/image_origin/A3koala_leaves_ice.jpg",
+        "tip": ["動物", "物件", "場景"],
+        "answer": ["koala", "grass", "ice"],
+        "show": ["koala 無尾熊", "grass 草", "ice 冰"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 4,
+        "image_vague": "/static/image_vague/A4cat_moon_lake.jpg",
+        "image_origin": "/static/image_origin/A4cat_moon_lake.jpg",
+        "tip": ["動物", "物件", "場景"],
+        "answer": ["cat", "moon", "night"],
+        "show": ["cat 貓咪", "moon 月亮", "night 夜晚"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 5,
+        "image_vague": "/static/image_vague/A5whale_boat_ocean.jpg",
+        "image_origin": "/static/image_origin/A5whale_boat_ocean.jpg",
+        "tip": ["動物", "物件", "場景"],
+        "answer": ["whale", "boat", "ocean"],
+        "show": ["whale 鯨魚", "boat 船", "ocean 海洋"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 6,
+        "image_vague": "/static/image_vague/A6zebra_lion_stone.jpg",
+        "image_origin": "/static/image_origin/A6zebra_lion_stone.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["zebra", "lion", "rock"],
+        "show": ["zebra 斑馬", "lion 獅子", "rock 岩石"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 7,
+        "image_vague": "/static/image_vague/A7wolf_bunny_desert.jpg",
+        "image_origin": "/static/image_origin/A7wolf_bunny_desert.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["wolf", "bunny", "desert"],
+        "show": ["wolf 狼", "bunny 小兔子", "desert 沙漠"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 8,
+        "image_vague": "/static/image_vague/A8bird_elephant_waterfall.jpg",
+        "image_origin": "/static/image_origin/A8bird_elephant_waterfall.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["elephant", "bird", "waterfall"],
+        "show": ["elephant 大象", "bird 鳥", "waterfall 瀑布"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 9,
+        "image_vague": "/static/image_vague/A9giraffe_penguin_fence.jpg",
+        "image_origin": "/static/image_origin/A9giraffe_penguin_fence.jpg",
+        "tip": ["動物", "動物", "物件"],
+        "answer": ["giraffe", "penguin", "fence"],
+        "show": ["giraffe 長頸鹿", "penguin 企鵝", "fence 柵欄"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 10,
+        "image_vague": "/static/image_vague/A10rain_maple_turtle.jpg",
+        "image_origin": "/static/image_origin/A10rain_maple_turtle.jpg",
+        "tip": ["動物", "物件", "場景"],
+        "answer": ["turtle", "umbrella", "raining"],
+        "show": ["turtle 烏龜", "umbrella 傘", "raining 下雨"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 11,
+        "image_vague": "/static/image_vague/A11cow_chicken_sunny.jpg",
+        "image_origin": "/static/image_origin/A11cow_chicken_sunny.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["cow", "chicken", "farm"],
+        "show": ["cow 乳牛", "chicken 雞", "farm 農場"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    },
+    {
+        "level": 12,
+        "image_vague": "/static/image_vague/A12jellyfish_crocodile_universe.jpg",
+        "image_origin": "/static/image_origin/A12jellyfish_crocodile_universe.jpg",
+        "tip": ["動物", "動物", "場景"],
+        "answer": ["jellyfish", "crocodile", "universe"],
+        "show": ["jellyfish 水母", "crocodile 鱷魚", "universe 宇宙"],
+        "sentence":["使用 What is it/are they doing? 句型造句","使用 These/Those/They are 造句"]
+    }
+]
+
